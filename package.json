@@ -1,0 +1,10 @@
+{
+  "name": "chess-engine",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cargo run --manifest-path backend/Cargo.toml\" \"npm run dev --prefix frontend\" --names backend,frontend --prefix-colors blue,green"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
